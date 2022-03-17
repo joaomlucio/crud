@@ -1,0 +1,28 @@
+server:
+  port: 3000
+  host: localhost
+
+database:
+  type: postgres
+  host: localhost
+  database: crud_data
+  username: postgres
+  password: password
+  port: 5432
+  synchronize: true
+  migrationsRun: true
+  logging: true
+
+graphql:
+  debug: true
+  playground: true
+
+encrypt:
+  key: 'f820ac1707e117d69fdbd9ecaa69d4bc4d027e88c1bad6ec595e0cb33859009d'
+  algorithm: 'aes-256-cbc'
+  ivLength: 16
+
+jwt:
+  secret: ce0f6c28b5869ff166714da5fe08554c70c731a335ff9702e38b00f81ad348c6
+  signOptions:
+    expiresIn: '30d'
